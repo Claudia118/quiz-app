@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>"The Office" Trivia Quiz</h1>
     <div class="quiz-container">
-        <h2>Question Text</h2>
+        <div class="quiz-header">
+            <h1>"The Office" Trivia Quiz</h1>
+        <h2 id="question">Question Text</h2>
         <ul>
             <li>
                 <input type="radio" id="a" name="answer">
-                <label for="a">Question</label>
+                <label id="a_text" for="a">Question</label>
             </li>
             <li>
                 <input type="radio" id="b" name="answer">
-                <label for="b">Question</label>
+                <label id="b_text" for="b">Question</label>
             </li>
             <li>
                 <input type="radio" id="c" name="answer">
-                <label for="c">Question</label>
+                <label id="c_text" for="c">Question</label>
             </li>
             <li>
                 <input type="radio" id="d" name="answer">
-                <label for="d">Question</label>
+                <label id="d_text" for="d">Question</label>
             </li>
         </ul>
-        <button>Submit</button>
+        </div>
+        <button id="submit">Submit</button>
     </div>
 </body>
 </html>
